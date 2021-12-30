@@ -2,7 +2,7 @@ name: Using private custom actions
 
 on:
   workflow_dispatch:
-
+  
 jobs:
   custom_js_action_job:
     runs-on: ubuntu-latest
@@ -10,7 +10,8 @@ jobs:
     steps:
       # To use this repository's private action, you must check out the repository
       - name: Checkout
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
+      
       - name: Custom JS Action step
         uses: ./ # Uses an action in the root directory
         id: myjsaction
