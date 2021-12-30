@@ -1,4 +1,4 @@
-name: Using my custom action
+name: Using public custom actions
 
 on:
   workflow_dispatch:
