@@ -1,0 +1,20 @@
+{
+  "name": "actions-custom-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harukine/actions-custom-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Harukine/actions-custom-action/issues"
+  },
+  "homepage": "https://github.com/Harukine/actions-custom-action#readme"
+}
