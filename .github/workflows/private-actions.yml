@@ -1,0 +1,21 @@
+name: Using private custom actions
+
+on:
+  workflow_dispatch:
+
+jobs:
+  custom_js_action_job:
+    runs-on: ubuntu-latest
+    name: Custom private repo JS Actions
+    steps:
+      # To use this repository's private action, you must check out the repository
+      - name: Checkout
+      - uses: actions/checkout@v2
+      - name: Custom JS Action step
+        uses: ./ # Uses an action in the root directory
+        id: myjsaction
+        with:
+          name-of-you: 'TestName'
+      # Use the output from the `myjsaction` step
+      - name: Get the output time
+        run: echo "The time was ${{ steps.myjsaction.outputs.time }}"
