@@ -13,6 +13,8 @@ This action prints "Hello Jacob" or "Hello" + the name of a person
 The time of the message.
 
 ## Example usage
+```
 uses: harukine/actions-custom-action@v1
 with:
   name-of-you: 'your-name'
+```
